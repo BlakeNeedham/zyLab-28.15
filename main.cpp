@@ -3,10 +3,12 @@
 using namespace std;
 int main(){
 
-  string title;
+  string userTitle;
   cout << "Enter playlist's title: " << endl;
-  cin >> title;
-  cout << title;
+  cin >> userTitle;
+  cout << userTitle;
+
+  PlaylistNode::PrintMenu(userTitle);
   return 0;
 }
 
