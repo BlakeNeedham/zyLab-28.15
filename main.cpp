@@ -1,6 +1,12 @@
 #include <iostream>
+#include "PlaylistNode.h"
 using namespace std;
 int main(){
+
+  string title;
+  cout << "Enter playlist's title: " << endl;
+  cin >> title;
+  cout << title;
   return 0;
 }
 
