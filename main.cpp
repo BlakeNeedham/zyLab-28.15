@@ -28,26 +28,6 @@ void OutputFullPlaylist(PlaylistNode* head) {
             position++;
         }
     
-
-
-/*
-    if (tmp->GetNext() != nullptr) {
-        int position = 1;
-        tmp=tmp->GetNext();
-        while (tmp != nullptr) {
-            cout << position << ".\n";
-            tmp->PrintPlaylistNode();
-            cout << endl;
-
-            tmp = tmp->GetNext();
-            position++;
-        }
-        
-        return;
-    }
-    cout << "Playlist is empty" << endl << endl;
-    //cout<< na<<" - OUTPUT FULL PLAYLIST Playlist is empty";
-*/
     
 }
 void ExecuteMenu(char choice, string playlistTitle, PlaylistNode* head) {
@@ -59,8 +39,6 @@ void ExecuteMenu(char choice, string playlistTitle, PlaylistNode* head) {
         OutputFullPlaylist(head);
 
         
-            
-
             
     }else if(choice == 'a'){
         string ID, songN, artistN,songL;
@@ -83,16 +61,7 @@ void ExecuteMenu(char choice, string playlistTitle, PlaylistNode* head) {
             
             PlaylistNode* newN = new PlaylistNode(ID, songN, artistN, sl);
             head->insertAtEnd(newN);
-/*
-            if(head==nullptr){
 
-               head = new PlaylistNode(ID, songN, artistN, sl);
-
-            }else{
-                
-
-            }
-            */
     }else if(choice == 'd'){
         string songID;
         cout<<"REMOVE SONG"<<endl;
@@ -114,9 +83,6 @@ void ExecuteMenu(char choice, string playlistTitle, PlaylistNode* head) {
     }else{
         cout << "Invalid choice. Please try again." << endl;
     }
-
-
-
 
     //return head;
 }
@@ -159,10 +125,3 @@ int main(){
 
     return 0;
 }
-
-
-
-
-
-//Remember you can skip step #9 which will  leave you with 21 points in the lab submission box in zyLabs (you get 6 additional points from posting lab on github).
-//All group members must submit assignment through zyLabs (including the url to the github assignment) in order to get credit for the assignment. 
