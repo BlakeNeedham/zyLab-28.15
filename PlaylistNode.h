@@ -12,7 +12,7 @@ class PlaylistNode {
     PlaylistNode();
 
     // parameterized constructor
-    PlaylistNode(string& id, string& name, string& artist, int length);
+    PlaylistNode(string id, string name, string artist, int length);
 
     // accessors
     string GetID();
@@ -24,9 +24,14 @@ class PlaylistNode {
     // mutators
     void InsertAfter(PlaylistNode* nodePtr);
     void SetNext(PlaylistNode* nodePtr);
+    void insertAtEnd(PlaylistNode* newNode);
+    void removeByID(string Id);
+    
 
     // print function
     void PrintPlaylistNode();
+    void printByArtist(string aName);
+    void GetTime();
 
   private: 
     string uniqueID;
